@@ -1,0 +1,2 @@
+C:\Users\andou\source\repos\FoodToMe\FoodToMe\obj\Debug\FoodToMe.csprojAssemblyReference.cache
+C:\Users\andou\source\repos\FoodToMe\FoodToMe\obj\Debug\FoodToMe.csproj.CoreCompileInputs.cache
