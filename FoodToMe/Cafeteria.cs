@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodToMe
+namespace FoodToMeApp
 {	  #comment
     static class Cafeteria
     {
@@ -15,22 +15,22 @@ namespace FoodToMe
         /// create an account with the Main Cafeteria
         /// </summary>
         /// <param name="emailAddress">Email Address associated with the account</param>
-        /// <param name="accountType">type of account</param>
-        /// <param name="initialDeposit">Initial amount to deposit</param>
-        /// <returns>Account</returns>
-        /// 
-        public static Account CreateAccount(string emailAddress, TypeOfAccounts accountType = TypeOfAccounts.FTE, decimal initialDeposit = 0)
+        /// <param name="phoneNumber">Phone Number associated with the account</param>
+        /// <param name="paypalAddress">PayPal Address associated with the account</param>
+		/// <param name="accountType">type of account</param>
+        /// <returns>Accounts</returns>
+		
+        public static Accounts CreateAccount(string emailAddress, string phoneNumber, string paypalAddress, TypeOfAccounts accountType)
         {
-            var account = new Account
+            var account = new Accounts
             {
                 EmailAddress = emailAddress,
-                AccountType = accountType
+                PhoneNumber = phoneNumber,
+				PayPalAddress = paypalAddress,
+				AccountType = accountType,
             };
 
-            if (initialDeposit > 0)
-            {
-                account.Deposit(initialDeposit);
-            };
+          
 
             return account;
         }

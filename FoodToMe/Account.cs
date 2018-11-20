@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankApp
+namespace FoodToMeApp
 {
     enum TypeOfAccounts
     {
-        Vendor,
-        FTE,
-		Administrator
+        User,
+        Administrator
     }
     /// <summary>
     /// Defines all properties and methods for Accounts
@@ -24,7 +23,7 @@ namespace BankApp
         /// Account number for the account
         /// </summary>
         public string EmailAddress { get; set; }
-        public string PHoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         public string PayPalAddress { get; set; }
 		public int AccountNumber {get; set;}
         public TypeOfAccounts AccountType { get; set; }
