@@ -8,54 +8,39 @@ namespace BankApp
 {
     enum TypeOfAccounts
     {
-        Savings,
-        Checking
+        Vendor,
+        FTE,
+		Administrator
     }
     /// <summary>
-    /// Defines all properties and methods for a bank app
+    /// Defines all properties and methods for Accounts
     /// </summary>
-    class Account
+    class Accounts
     {
 
         private static int lastAccountNumber = 0; 
         #region properties
         /// <summary>
-        /// Exczema, LOL, Account number for the account
+        /// Account number for the account
         /// </summary>
-        public int AccountNumber { get;  }
         public string EmailAddress { get; set; }
-        public decimal Balance { get; private set; }
+        public string PHoneNumber { get; set; }
+        public string PayPalAddress { get; set; }
+		public int AccountNumber {get; set;}
         public TypeOfAccounts AccountType { get; set; }
         public DateTime CreatedDate { get; set; }
 
         #endregion
         #region Constructor
 
-        public Account()
+        public Accounts()
         {
             AccountNumber = ++lastAccountNumber;
             CreatedDate = DateTime.Now;
         }
 
         #endregion
-        #region Methods
-
-        /// <summary>
-        /// deposit money into the account
-        /// </summary>
-        /// <param name="amount">Amount to Deposit</param>
-        public void Deposit(decimal amount)
-        {
-            Balance += amount;
-        }
-
-
         
-        public void Withdraw(decimal amount)
-        {
-            Balance -= amount;
-        }
-        #endregion
 
     }
 }
