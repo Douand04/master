@@ -1,2 +1,9 @@
 C:\Users\andou\source\repos\FoodToMe\FoodToMe\obj\Debug\FoodToMe.csprojAssemblyReference.cache
 C:\Users\andou\source\repos\FoodToMe\FoodToMe\obj\Debug\FoodToMe.csproj.CoreCompileInputs.cache
+C:\Users\andou\source\repos\master\FoodToMe\obj\Debug\FoodToMe.csprojAssemblyReference.cache
+C:\Users\andou\source\repos\master\FoodToMe\obj\Debug\FoodToMe.csproj.CoreCompileInputs.cache
+C:\Users\andou\source\repos\master\FoodToMe\bin\Debug\FoodToMe.exe.config
+C:\Users\andou\source\repos\master\FoodToMe\bin\Debug\FoodToMe.exe
+C:\Users\andou\source\repos\master\FoodToMe\bin\Debug\FoodToMe.pdb
+C:\Users\andou\source\repos\master\FoodToMe\obj\Debug\FoodToMe.exe
+C:\Users\andou\source\repos\master\FoodToMe\obj\Debug\FoodToMe.pdb

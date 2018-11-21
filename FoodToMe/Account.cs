@@ -31,6 +31,8 @@ namespace FoodToMeApp
 
         #endregion
         #region Constructor
+		
+
 
         public Accounts()
         {
@@ -38,8 +40,11 @@ namespace FoodToMeApp
             CreatedDate = DateTime.Now;
         }
 
-        #endregion
-        
+		#endregion
 
-    }
+		#region Methods
+
+		#endregion
+
+	}
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FoodToMeApp
-{	  #comment
+{	  
     static class Cafeteria
     {
 
@@ -20,7 +20,7 @@ namespace FoodToMeApp
 		/// <param name="accountType">type of account</param>
         /// <returns>Accounts</returns>
 		
-        public static Accounts CreateAccount(string emailAddress, string phoneNumber, string paypalAddress, TypeOfAccounts accountType)
+        public static Accounts CreateAccount(string emailAddress, string phoneNumber, string paypalAddress, TypeOfAccounts accountType = TypeOfAccounts.User)
         {
             var account = new Accounts
             {
@@ -31,10 +31,12 @@ namespace FoodToMeApp
             };
 
           
-
+			
             return account;
         }
 
-        #endregion
-    }
+		#endregion
+
+
+	}
 }
