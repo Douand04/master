@@ -5,38 +5,43 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FoodToMeApp
-{	  
-    static class Cafeteria
-    {
+{
+	static class Cafeteria
+	{
+		private static  List<Accounts> accounts = new List<Accounts>();
 
-        #region methods
+		#region methods
 
-        /// <summary>
-        /// create an account with the Main Cafeteria
-        /// </summary>
-        /// <param name="emailAddress">Email Address associated with the account</param>
-        /// <param name="phoneNumber">Phone Number associated with the account</param>
-        /// <param name="paypalAddress">PayPal Address associated with the account</param>
+		/// <summary>
+		/// create an account with the Main Cafeteria
+		/// </summary>
+		/// <param name="emailAddress">Email Address associated with the account</param>
+		/// <param name="phoneNumber">Phone Number associated with the account</param>
+		/// <param name="paypalAddress">PayPal Address associated with the account</param>
 		/// <param name="accountType">type of account</param>
-        /// <returns>Accounts</returns>
-		
-        public static Accounts CreateAccount(string emailAddress, string phoneNumber, string paypalAddress, TypeOfAccounts accountType = TypeOfAccounts.User)
-        {
-            var account = new Accounts
-            {
-                EmailAddress = emailAddress,
-                PhoneNumber = phoneNumber,
+		/// <returns>Accounts</returns>
+
+		public static Accounts CreateAccount(string emailAddress, string phoneNumber, string paypalAddress, TypeOfAccounts accountType = TypeOfAccounts.User)
+		{
+			var account = new Accounts
+			{
+				EmailAddress = emailAddress,
+				PhoneNumber = phoneNumber,
 				PayPalAddress = paypalAddress,
 				AccountType = accountType,
-            };
+			};
 
-          
 			
-            return account;
-        }
+			accounts.Add(account);
+			return account;
+		}
 
 		#endregion
 
+		public static IEnumerable<Accounts> GetAllAccounts()
+		{
+		  return accounts;
+		}
 
 	}
 }

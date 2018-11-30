@@ -1,0 +1,6 @@
+C:\Users\andou\source\repos\master\FoodToMe\bin\Release\FoodToMe.exe.config
+C:\Users\andou\source\repos\master\FoodToMe\bin\Release\FoodToMe.exe
+C:\Users\andou\source\repos\master\FoodToMe\bin\Release\FoodToMe.pdb
+C:\Users\andou\source\repos\master\FoodToMe\obj\Release\FoodToMe.csproj.CoreCompileInputs.cache
+C:\Users\andou\source\repos\master\FoodToMe\obj\Release\FoodToMe.exe
+C:\Users\andou\source\repos\master\FoodToMe\obj\Release\FoodToMe.pdb

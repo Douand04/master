@@ -18,6 +18,7 @@ namespace FoodToMeApp
     {
 
         private static int lastAccountNumber = 0; 
+
         #region properties
         /// <summary>
         /// Account number for the account
